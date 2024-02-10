@@ -3,7 +3,6 @@ describe('Landing Page Tests', () => {
     cy.visit('http://localhost:5173');
     cy.contains('Register').click();
     
-    // Add an assertion to check if you've successfully navigated to the registration page
     cy.contains('Register').click();
 cy.log('http://localhost:5173/register', cy.url());
     cy.url().should('include', '/register');
@@ -12,7 +11,7 @@ cy.log('http://localhost:5173/register', cy.url());
 
 describe("Form Validations", () => {
   beforeEach(() => {
-    // Assuming your registration page is at http://localhost:5173/register
+   
     cy.visit("http://localhost:5173/register");
   });
 
